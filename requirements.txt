@@ -1,0 +1,12 @@
+greenlet==3.1.1
+mpmath==1.3.0
+numpy==2.2.4
+opencv-python==4.11.0.86
+packaging==24.2
+pillow==11.1.0
+playwright==1.51.0
+pyee==12.1.1
+pytesseract==0.3.13
+setuptools==78.1.0
+sympy==1.13.3
+typing_extensions==4.13.1
