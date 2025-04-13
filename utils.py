@@ -125,16 +125,16 @@ def process_math_expression(expression):
     except (SyntaxError, TypeError, ValueError, Exception) as e:
         return f"Failed to evaluate expression: '{expression}' (processed as '{proc_expr}'). Error: {type(e).__name__} - {str(e)}"
 
-def main():
-    image_path = "captcha.png"
-
-    # Extract the math expression from the image
-    extracted_text = ocr_math_expression(image_path)
-    print(f"Extracted text: {extracted_text}")
-
-    # Process and evaluate the expression
-    result = process_math_expression(extracted_text)
-    print(result)
-
-if __name__ == "__main__":
-    main()
+# def main():
+#     image_path = "captcha.png"
+#
+#     # Extract the math expression from the image
+#     extracted_text = ocr_math_expression(image_path)
+#     print(f"Extracted text: {extracted_text}")
+#
+#     # Process and evaluate the expression
+#     result = process_math_expression(extracted_text)
+#     print(result)
+#
+# if __name__ == "__main__":
+#     main()

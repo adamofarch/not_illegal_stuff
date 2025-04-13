@@ -32,7 +32,8 @@ with sync_playwright() as p:
 
     image_path = "captcha.png"
     extracted_text = ocr_math_expression("captcha.png")
-    captcha_result = process_math_expression(extracted_text) final_result = captcha_result.split("\n")[-1].split(":")[-1].strip()
+    captcha_result = process_math_expression(extracted_text) 
+    final_result = captcha_result.split("\n")[-1].split(":")[-1].strip()
     page.fill("#captcha", final_result)
     page.click("#main_search")
     time.sleep(5) 
