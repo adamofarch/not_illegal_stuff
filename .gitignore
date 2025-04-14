@@ -2,3 +2,6 @@ __pycache__/
 venv/
 captcha.png
 pdfs/*
+*.pdf
+*.log
+*.png
